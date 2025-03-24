@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets";
+
+import HeaderLogo from "../assets/logo-header-two.png";
+import Contact from "../assets/contact.png";
+import Home from "../assets/home.svg";
+import Asesoria from "../assets/asesoria.png";
+import Testomonios from "../assets/clasificacion.png";
+import Plans from "../assets/plans.png";
+---
+
+<header class="relative w-full z-40">
+  <nav
+    class="bg-[#F2F2F2] w-full p-4 fixed h-16 flex justify-between items-center shadow-lg"
+  >
+    <div class="text-2xl font-bold">
+      <Image src={HeaderLogo} alt="logo" width="100" />
+    </div>
+    <ul
+      class="flex space-x-4 text-[#262624] text-lg gap-x-1 md:gap-x-6 lg:gap-x-0"
+    >
+      <li>
+        <a href="#welcome" class="hover:underline">
+          <Image src={Home} alt="home" width="25" class="block lg:hidden" />
+          <span class="hidden lg:block">Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a href="#nutritional-advice" class="hover:underline">
+          <Image
+            src={Asesoria}
+            alt="asesoria"
+            width="25"
+            class="block lg:hidden"
+          />
+          <span class="hidden lg:block"> Asesorías</span>
+        </a>
+      </li>
+      <li>
+        <a href="#testimonials" class="hover:underline">
+          <Image
+            src={Testomonios}
+            alt="testimonios"
+            width="25"
+            class="block lg:hidden"
+          />
+          <span class="hidden lg:block"> Testimonios</span>
+        </a>
+      </li>
+      <li>
+        <a href="#plans" class="hover:underline">
+          <Image src={Plans} alt="planes" width="25" class="block lg:hidden" />
+          <span class="hidden lg:block"> Planes</span>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="hover:underline">
+          <Image
+            src={Contact}
+            alt='contactame"'
+            width="25"
+            class="block lg:hidden"
+          />
+          <span class="hidden lg:block"> Contáctame</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
