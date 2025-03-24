@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+
+import Instagram from "../assets/instagram-icon.svg";
+import Facebook from "../assets/facebook-icon.svg";
+import Whatsapp from "../assets/whatsapp-icon.svg";
+---
+
+<div
+  class="flex justify-center flex-col items-center gap-y-8 lg:flex-col bg-[#BEBF8E] h-auto p-8"
+  id="contact"
+>
+  <div class="flex gap-x-8">
+    <a
+      href="https://www.instagram.com/cindycalderanoto?igsh=MW1md25vbm1hNHdiOA=="
+      target="_blank"
+    >
+      <Image src={Instagram} alt="Instagram" class="w-10 h-10" />
+    </a>
+    <a href="https://www.facebook.com/share/1BwBgmGR3B/" target="_blank">
+      <Image src={Facebook} alt="Facebook" class="w-10 h-10" />
+    </a>
+    <a
+      href="https://api.whatsapp.com/message/WCDPN2IOPKX3N1?autoload=1&app_absent=0"
+      target="_blank"
+    >
+      <Image src={Whatsapp} alt="WhatsApp" class="w-10 h-10" />
+    </a>
+  </div>
+  <div class="flex items-center flex-col md:flex-row gap-x-5 text-center">
+    <div>
+      <p class="text-xl">Lcda. Cindy Caldera</p>
+      <p class="text-xl">Nutricionista Dietista - LUZ</p>
+    </div>
+
+    <p class="text-xl">Tlf: +58 424 - 667 89 07</p>
+  </div>
+</div>

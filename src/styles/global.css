@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "CenturyGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/public/fonts/centurygothic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "CenturyGothicBold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/public/fonts/centurygothic_bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Quahon";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/public/fonts/Quahon.otf") format("otf");
+}

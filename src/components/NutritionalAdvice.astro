@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+
+import { NUTRITIONAL_ADVICE_LIST } from "../constants/data";
+---
+
+<div
+  class="h-min py-8 bg-[#F2F2F2] bg-[url('src/assets/bg-logo.png')] bg-cover bg-top"
+  id="nutritional-advice"
+>
+  <div class="p-8 flex flex-col justify-center items-center">
+    <p class="text-center text-7xl font-[Quahon] mb-8">Asesoría Nutricional</p>
+
+    <div class="flex gap-x-16 items-center">
+      <div class="w-full space-y-6 flex flex-col justify-center items-center">
+        {
+          NUTRITIONAL_ADVICE_LIST.map((item) => (
+            <div class=" rounded-3xl p-4 shadow-md shadow-[#e8c3c0] border-2 border-[#D9736A] w-full mx-4 transition-transform duration-300 hover:scale-110 cursor-pointer">
+              <div class="text-[#898C35] font-[Quahon] text-2xl text-center font-extrabold mb-2 tracking-wider">
+                {item.title}
+              </div>
+              <div class="text-[#262624]">{item.text}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>

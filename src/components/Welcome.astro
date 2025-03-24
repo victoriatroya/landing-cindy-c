@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+
+import CindyC from "../assets/cindy-c-dra.png";
+---
+
+<div
+  class="flex flex-col lg:flex-row items-center justify-center bg-[#BEBF8E]"
+  id="welcome"
+>
+  <div class="p-8 flex flex-col justify-center items-center">
+    <p class="text-5xl mt-16 lg:text-8xl font-[Quahon] font-bold text-white">
+      Cindy Caldera
+    </p>
+    <div class="text-center w-full xl:w-[650px]">
+      <p
+        class="text-[#262624] text-xl lg:text-2xl font-[CenturyGothicBold] px-6 mt-6 w-full"
+      >
+        Nutricionista Dietista, egresada de la Universidad del Zulia (LUZ,
+        Venezuela) con una maestría en España.
+      </p>
+      <p
+        class="text-[#262624] text-xl lg:text-2xl font-[CenturyGothicBold] px-6 mt-6 w-full"
+      >
+        Especializada en nutrición deportiva, clínica, infantil y dietoterapia
+        para pacientes con afecciones como insuficiencia renal, hipertensión,
+        diabetes y enfermedades autoinmunes.
+      </p>
+      <p
+        class="text-[#262624] text-xl lg:text-2xl font-[CenturyGothicBold] px-6 mt-6 w-full"
+      >
+        Diseñaré un plan de nutrición adaptado a tus objetivos, estilo de vida y
+        necesidades. Mejora tu salud y bienestar sin restricciones. ¡Empieza hoy
+        tu transformación!
+      </p>
+    </div>
+    <button
+      class="mt-6 lg:mt-16 bg-[#D9736A] text-[#F2F2F2] rounded-full py-2 px-12 lg:py-3 lg:px-14 text-lg lg:text-2xl shadow-2xl transition-all duration-300 ease-in-out transform
+             hover:scale-105 hover:brightness-110 active:shadow-lg animate-fadeInUp font-[Quahon] font-extrabold tracking-widest"
+    >
+      Quiero saber más
+    </button>
+  </div>
+  <Image src={CindyC} alt="Background" width="450" />
+</div>
